@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+:root {
+  
+  --cor1: #B4BABA;
+  --cor2: #ffffff;
+  --cor3: #6A6D6D;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor1);
+    
+}
+
+header{
+  background-color: var(--cor1);
+  color: var(--cor2);
+  height: 60px;
+}
+header > h1{
+    text-align: center;
+    padding: 20px;
+}
+
+/*Titulo*/
+
+#titu{
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+}
+
+#titu>h1{
+  text-align: center;
+}
+
+/*Lupa de pesquisa
+
+form{
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+}
+#Ipesquisa {
+    padding: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--cor1);
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-top: 10px;
+}*/
+
+#gam{
+    display: flex;
+      position: fixed;
+      top: 0; /* Fixar o menu no topo */
+      width: 100%; /* Largura total */
+      z-index: 999; /* Para garantir que fique por cima de outros elementos */
+      background-color: var(--cor3);
+}
+
+/*Menu hambúrguer*/
+
+/* Ocultar o menu por padrão em telas maiores */
+#itens {
+    display: none;
+    position: fixed; /* Para manter o menu na posição */
+    top: 0; /* Posicionamento a partir do topo */
+    right: 0; /* Posicionamento a partir da direita */
+    background-color: var(--cor1); /* Cor de fundo do menu */
+    padding: 20px;
+    z-index: 9999; /* Valor alto de z-index para sobrepor outros elementos */
+  }
+  
+  /* Estilizando o ícone do menu */
+  #menuu {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 20px;
+  }
+
+  #itens {
+    display: none;
+    position: fixed; /* Para manter o menu na posição */
+    top: 60px; /* Posicionamento a partir do topo */
+    right: 0; /* Posicionamento a partir da direita */
+    background-color: var(--cor3); /* Cor de fundo do menu */
+    padding: 20px;
+    z-index: 9999; /* Valor alto de z-index para sobrepor outros elementos */
+  }
+  
+  /* Estilizando o menu */
+  #itens > ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+  }
+  
+  #itens > ul > li {
+    margin-bottom: 10px;
+  }
+  
+  #itens > ul > li > a {
+    text-decoration: none;
+    color: var(--cor1);
+    transition: color 0.3s ease;
+  }
+  
+  #itens >ul > li > a:hover {
+    color: var(--cor2);
+  }
+
+
+  
+
+/* Conteudo 
+---section 1*/
+
+  main{
+    display: flex;
+  }
+
+#sec1{
+    max-width: 300px;
+    padding: 10px;
+}
+
+.edupro{
+    display: none;
+}
+
+ /*-----------menu2--------------*/
+
+
+
+#menu2{
+  max-width: 150px;
+  border-radius: 10px;
+  margin: auto;
+ }
+
+.logo{
+  width: 35px;
+}
+
+.submenu{
+  padding: 10px;
+  list-style-type: none;
+  display: flex;
+ }
+
+.minhas-redes{
+  margin-left: 20px;
+  transition: transform 0.3s;
+ }
+
+ .minhas-redes:hover{
+    transform: translateY(-10px);
+ }
+
+
+/*Carrosel*/
+
+
+.carousel{
+    max-width: 800px;
+    margin: auto;
+}
+
+/*section 2*/
+
+h3{
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#ori{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+main > #sec1  > select {
+  margin: auto;
+  margin: 20px;
+}
+
+#sec1, #sec2 {
+    flex: 1 1 50%; /* Distribuir metade do espaço na tela */
+    max-width: 50%; /* Limitar a largura para 50% em telas maiores */
+  }
+
+
+  #lado1 {
+    flex: 1 1 100%; /* Distribuir metade do espaço na tela */
+    max-width: 100%; /* Limitar a largura para 50% em telas maiores */
+    margin: auto;
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: center; 
+}
+
+.row:nth-child(1) {
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha */
+}
+
+.campanha {
+    margin: 5px; /* Espaçamento entre as imagens */
+    flex: 1 0 45%; /* Define a largura das imagens (ajustável conforme necessário) */
+}
+
+/* Estilos adicionais para as imagens, como largura máxima, altura fixa, etc. */
+.campanha img {
+    max-width: 100%; /* Para garantir que as imagens se ajustem ao contêiner */
+    height: auto;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--cor3);
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #007bff;
+}
+
+
+
+
+@media (max-width: 768px) {
+  main{
+    display: inline-block;
+    width: 100%;
+
+  }
+  #sec1, #sec2 {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+}
